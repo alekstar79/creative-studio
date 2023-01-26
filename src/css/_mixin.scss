@@ -1,0 +1,59 @@
+@import '_variables';
+@import '_mixin';
+
+@mixin ourProjectsText {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@mixin grid {
+  max-width: 630px;
+  display: grid;
+  grid-gap: 30px;
+}
+
+@mixin button {
+  width: 126px;
+  height: 50px;
+  background-color: $buttonColor;
+  border: 0;
+  color: $textColorLight;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0 0 0 52px;
+  flex: 0 0 auto;
+}
+
+@mixin buttonLite {
+  color: $textColorLight;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  width: 121px;
+  height: 50px;
+  border: 3px solid #FF6E30;
+  background-color: rgba(0, 0, 0, 0);
+  align-self: flex-end;
+}
+
+@mixin teg {
+  position: absolute;
+  padding: 6px 14px;
+  margin-top: 7px;
+  margin-right: 7px;
+  background-color: $tegColor;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $textColorLight;
+}

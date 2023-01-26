@@ -1,0 +1,81 @@
+@import '_variables';
+@import '_mixin';
+
+.footer {
+  width: 100%;
+  height: 106px;
+  padding-top: 24px;
+  background-color: $bgColorDark;
+  .footer__container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:"logo text text link";
+    .footer__logo {
+      grid-area: logo;
+      align-self: center;
+      .footer__logo-text {
+        font-family: "TT Firs Neue", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: $textColorSoft;
+      }
+    }
+    .footer__text {
+      grid-area: text;
+      margin-left: 106px;
+      .footer__text-content {
+        max-width: 361px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $textColorSoft;
+        .footer__light-text {
+          color: darken($textColorSoft, 30%)
+        }
+      }
+    }
+    .footer__link {
+      grid-area: link;
+      align-self: center;
+      margin-left: auto;
+      .footer__link-text-content {
+        max-width: 364px;
+        margin-left: 98px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $textColorSoft;
+      }
+      .footer__link-content {
+        display: flex;
+        justify-content: space-between;
+        width: 131px;
+        margin-top: 8px;
+        margin-right: 14px;
+        margin-left: auto;
+        .icon {
+          fill: $textColorSoft;
+          transition: .2s;
+        }
+        .icon:hover {
+          fill: $buttonColor;
+          transition: .2s;
+        }
+        a:focus>.icon {
+          fill: #BC572B;
+          transition: .2s;
+        }
+        a:active>.icon {
+          fill: #CE4307;
+          transition: .2s;
+        }
+      }
+    }
+  }
+}

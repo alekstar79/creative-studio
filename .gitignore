@@ -1,0 +1,19 @@
+/node_modules/
+/dist/
+
+# ignoring target file
+target/
+
+# VisualStudioCode
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+# Ignore all local history of files
+.history
+.ionide
+
+# Dump file
+*.stackdump
+

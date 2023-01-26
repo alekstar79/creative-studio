@@ -1,0 +1,121 @@
+.title-page {
+  margin-top: 33px;
+  margin-bottom: 63px;
+}
+.title-page .title-page__container {
+  display: grid;
+  gap: 30px;
+  position: relative;
+  grid-template-areas: "left right";
+  grid-template-columns: 1fr 1fr;
+}
+.title-page .title-page__container .title-page__left {
+  max-width: 630px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  background-image: url("../img/master-class.jpg");
+  background-size: cover;
+  grid-area: left;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title-page .title-page__container .title-page__left .title-page__left-teg {
+  padding: 7px 15px;
+  background-color: #333333;
+  position: relative;
+  width: 120px;
+  height: 30px;
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: 18px;
+}
+.title-page .title-page__container .title-page__left .title-page__left-teg .title-page__left-teg-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.title-page .title-page__container .title-page__left .title-page__left-content {
+  margin-left: 59px;
+  margin-bottom: 64px;
+}
+.title-page .title-page__container .title-page__left .title-page__left-content .title-page__left-pretitle {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-bottom: 3px;
+}
+.title-page .title-page__container .title-page__left .title-page__left-content .title-page__left-title {
+  max-width: 427px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 104%;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+  margin-left: -1px;
+}
+.title-page .title-page__container .title-page__left .title-page__left-content .title-page__left-button {
+  width: 159px;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #FF6E30;
+  color: #FFFFFF;
+  border: 0px;
+  transition: 0.2s;
+}
+.title-page .title-page__container .title-page__left .title-page__left-content .title-page__left-button:hover {
+  background-color: #BC572B;
+  transition: 0.2s;
+}
+.title-page .title-page__container .title-page__left .title-page__left-content .title-page__left-button:focus {
+  background-color: #FF6E30;
+  border: 3px solid #CE4307;
+  transition: 0.2s;
+}
+.title-page .title-page__container .title-page__left .title-page__left-content .title-page__left-button:active {
+  background-color: #CE4307;
+  transition: 0.2s;
+}
+.title-page .title-page__container .title-page__right {
+  grid-area: right;
+}
+.title-page .title-page__container .title-page__right .title-page__right-title {
+  max-width: 630px;
+  font-family: "TT Firs Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 104%;
+  margin-bottom: 19px;
+  color: #202020;
+}
+.title-page .title-page__container .title-page__right .title-page__right-images {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "image1 image1" "image2 image3";
+}
+.title-page .title-page__container .title-page__right .title-page__right-images .title-page__right-image1 {
+  grid-area: image1;
+  margin-top: 5px;
+}
+.title-page .title-page__container .title-page__right .title-page__right-images .title-page__right-image2 {
+  grid-area: image2;
+  margin-top: -1px;
+}
+.title-page .title-page__container .title-page__right .title-page__right-images .title-page__right-image3 {
+  grid-area: image3;
+  margin-top: -1px;
+}/*# sourceMappingURL=title-page.css.map */

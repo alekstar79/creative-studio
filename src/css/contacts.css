@@ -1,0 +1,204 @@
+.contacts .container .contacts__title {
+  margin-bottom: 22px;
+  font-family: "TT Firs Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #202020;
+}
+.contacts .container .contacts__container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  margin-bottom: 65px;
+}
+.contacts .container .contacts__container .map {
+  grid-column: 1;
+  position: relative;
+}
+.contacts .container .contacts__container .map .contacts__info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgba(32, 32, 32, 0.85);
+  width: 49%;
+  height: 100%;
+  left: 0;
+  z-index: 100;
+  color: white;
+  padding-left: 60px;
+  padding-right: 50px;
+}
+.contacts .container .contacts__container .map .contacts__info .number-info .date-svg {
+  fill: #CACACA;
+}
+.contacts .container .contacts__container .map .contacts__info .number-info .contacts__info-text {
+  font-family: "TT Firs Neue", sans-serif;
+  font-style: normal;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 2px;
+  max-width: 300px;
+}
+.contacts .container .contacts__container .map .contacts__info .number-info .date-svg {
+  position: relative;
+  bottom: -5px;
+}
+.contacts .container .contacts__container .map .contacts__info .number-info:hover .contacts__info-text {
+  color: #FF6E30;
+}
+.contacts .container .contacts__container .map .contacts__info .number-info:hover .date-svg {
+  fill: #FF6E30;
+}
+.contacts .container .contacts__container .map .contacts__info .contacts__info-title {
+  font-family: "TT Firs Neue", sans-serif;
+  font-style: normal;
+  line-height: 22px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-left: 0;
+}
+.contacts .container .contacts__container .map .contacts__info .contacts__info-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #CACACA;
+  max-width: 300px;
+  margin-top: 8px;
+}
+.contacts .container .contacts__container .map .close-info {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: 0.2s;
+  background-color: rgba(32, 32, 32, 0);
+  border: 0;
+}
+.contacts .container .contacts__container .contacts__form {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  max-width: 415px;
+  margin-left: 5px;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-title {
+  font-family: "TT Firs Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 22px;
+  color: #202020;
+  margin-bottom: 5px;
+  margin-top: -6px;
+  margin-left: 5px;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #CACACA;
+  margin-bottom: 14px;
+  margin-left: 4px;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-input {
+  width: 100%;
+  padding: 15px 23px;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: #E9E9E9;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #202020;
+  transition: 0.2s;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-input:hover::-moz-placeholder {
+  color: #FF6E30;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-input:hover:-ms-input-placeholder {
+  color: #FF6E30;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-input:hover::placeholder {
+  color: #FF6E30;
+  transition: 0.2s;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-input:focus {
+  border: 1px solid #FF6E30;
+  transition: 0.2s;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-textarea {
+  padding: 15px 23px;
+  width: 100%;
+  height: 150px;
+  background-color: #E9E9E9;
+  border: 0;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-textarea:hover::-moz-placeholder {
+  color: #FF6E30;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-textarea:hover:-ms-input-placeholder {
+  color: #FF6E30;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-textarea:hover::placeholder {
+  color: #FF6E30;
+  transition: 0.2s;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-textarea:focus {
+  border: 1px solid #FF6E30;
+  transition: 0.2s;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-button {
+  width: 126px;
+  height: 50px;
+  background-color: #FF6E30;
+  border: 0;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0 0 0 52px;
+  flex: 0 0 auto;
+  transition: 0.2s;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-button:hover {
+  background-color: #BC572B;
+  transition: 0.2s;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-button:focus {
+  background-color: #FF6E30;
+  border: 3px solid #CE4307;
+  transition: 0.2s;
+}
+.contacts .container .contacts__container .contacts__form .contacts__form-button:active {
+  background-color: #CE4307;
+  transition: 0.2s;
+}

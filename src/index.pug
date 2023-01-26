@@ -1,0 +1,246 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Creative Studio
+        link(rel="icon" href="../favicon.svg" type="image/svg+xml")
+        link(rel="stylesheet", href="../css/styles.css")
+        link(rel="stylesheet", href="../css/media.css")
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap")
+        script(src="https://api-maps.yandex.ru/2.1/?apikey=59f1a432-f0df-4fc9-b985-30b76fd4d7af&lang=ru_RU")
+        script(src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js")
+    body
+      header.header
+        h1.visually-hidden High pass
+        .container.header__container
+          .header__logo
+            img.icon(src="img/logo2.png" width="191px" height="31px")
+          .header__navigate
+            nav
+              ul.nav-list
+                li.nav-link(tabindex="0")
+                  a О студии
+                li.nav-link(tabindex="0")
+                  a Наши проекты
+                li.nav-link(tabindex="0")
+                  a Услуги
+                li.nav-link(tabindex="0")
+                  a Контакты
+          .header__social-link
+            a(tabindex="0")
+              svg.icon(width = "30px" height = "30px")
+                use(xlink:href="../sprite.svg#social")
+            a(tabindex="0")
+              svg.icon(width = "30px" height = "30px")
+                use(xlink:href="../sprite.svg#fb")
+            a(tabindex="0")
+              svg.icon(width = "30px" height = "30px")
+                use(xlink:href="../sprite.svg#vk")
+          .header__search(tabindex="0")
+            svg.icon(width = "30px" height = "30px")
+              use(xlink:href="../sprite.svg#search")
+            input.search-input(type="search" placeholder="Что будем иcкать?")
+
+      .header_min
+        .container.header_min__container
+          .header_min__navigate
+            nav
+              ul.nav-list_min
+                li.nav-link(tabindex="0")
+                  a О студии
+                li.nav-link(tabindex="0")
+                  a Наши проекты
+                li.nav-link(tabindex="0")
+                  a Услуги
+                li.nav-link(tabindex="0")
+                  a Мастер-классы
+                li.nav-link(tabindex="0")
+                  a Контакты
+          .header_min__burger(tabindex="0")
+            svg.icon(width = "20px" height = "18px")
+              use(xlink:href="../sprite.svg#burger")
+
+      main
+        section.title-page
+          .container.title-page__container
+            .title-page__left
+              .title-page__left-teg
+                p.title-page__left-teg-text #мастеркласс
+              .title-page__left-content
+                p.title-page__left-pretitle Мастер-класс от Игоря Робова
+                h3.title-page__left-title Неоновый фотосет 2.0 7 июля 20:00
+                button.title-page__left-button(tabindex="0") Узнать больше
+            .title-page__right
+              div
+                h2.title-page__right-title  Работы участников предыдущего мастер-класса
+              .title-page__right-images
+                picture.title-page__right-image1
+                  source(srcset="../img/works-participants-1-4.jpg" media="(max-width: 380px)")
+                  source(srcset="../img/works-participants-1-3.jpg" media="(max-width: 500px)")
+                  source(srcset="../img/works-participants-1-2.jpg" media="(max-width: 610px)")
+                  source(srcset="../img/works-participants-1-4.jpg" media="(max-width: 710px)")
+                  source(srcset="../img/works-participants-1-3.jpg" media="(max-width: 960px)")
+                  source(srcset="../img/works-participants-1-2.jpg" media="(max-width: 1200px)")
+                  img(src="../img/works-participants-1.jpg" alt="")
+                picture.title-page__right-image2
+                  source(srcset="../img/works-participants-2-4.jpg" media="(max-width: 380px)")
+                  source(srcset="../img/works-participants-2-3.jpg" media="(max-width: 500px)")
+                  source(srcset="../img/works-participants-2-2.jpg" media="(max-width: 610px)")
+                  source(srcset="../img/works-participants-2-4.jpg" media="(max-width: 710px)")
+                  source(srcset="../img/works-participants-2-3.jpg" media="(max-width: 960px)")
+                  source(srcset="../img/works-participants-2-2.jpg" media="(max-width: 1200px)")
+                  img(src="../img/works-participants-2.jpg" alt="")
+                picture.title-page__right-image3
+                  source(srcset="../img/works-participants-3-4.jpg" media="(max-width: 380px)")
+                  source(srcset="../img/works-participants-3-3.jpg" media="(max-width: 500px)")
+                  source(srcset="../img/works-participants-3-2.jpg" media="(max-width: 610px)")
+                  source(srcset="../img/works-participants-3-4.jpg" media="(max-width: 710px)")
+                  source(srcset="../img/works-participants-3-3.jpg" media="(max-width: 960px)")
+                  source(srcset="../img/works-participants-3-2.jpg" media="(max-width: 1200px)")
+                  img(src="../img/works-participants-3.jpg" alt="")
+
+        section.info
+          .container.info__container
+            .info__left
+              h2.info__left-title О студии
+              p.info__left-text В рамках спецификации современных стандартов, интерактивные прототипы, инициированные исключительно синтетически, ограничены исключительно образом мышления. Предварительные выводы неутешительны: высокотехнологичная концепция общественного уклада требует от нас анализа соответствующих условий активизации! Следует отметить, что семантический разбор внешних противодействий  фиксирует необходимость распределения внутренних резервов и ресурсов. Безусловно, граница обучения кадров предоставляет широкие возможности для первоочередных требований. Повседневная практика показывает, что глубокий уровень погружения предполагает независимые способы реализации новых принципов формирования материально-технической и кадровой базы. Приятно, граждане, наблюдать, как явные признаки институционализации являются только методом политического участия и нарушающими общечеловеческие нормы этики.
+            .info__right
+              picture.info__right-img
+                source(srcset="../img/about-studio4.jpg" media="(max-width: 710px)")
+                source(srcset="../img/about-studio3.jpg" media="(max-width: 900px)")
+                source(srcset="../img/about-studio2.jpg" media="(max-width: 1200px)")
+                img(src="../img/about-studio.jpg", alt="")
+              h3.info__right-text Подписаться на рассылку
+              form.info__right-form(action="#")
+                input.info__right-input(type="text" placeholder="E-mail"  id="email1")
+                button.info__right-button(tabindex="0")  Отправить
+
+        section.our-projects
+          .container
+            h2.our-projects__title Наши проекты
+            .our-projects__container
+              .our-projects__images.our-projects__left-image1
+                picture
+                  source(srcset="../img/our-projects-1-3.jpg" media="(max-width: 500px)")
+                  source(srcset="../img/our-projects-1-2.jpg" media="(max-width: 1280px)")
+                  img(src="../img/our-projects-1.jpg" alt="")
+                p.our-projects__image-text Синтетически, смешаны с не уникальными данными до степени...
+                .image-date
+                  svg.date-svg.icon(width = "12px" height = "13px")
+                      use(xlink:href="../sprite.svg#mdi_calendar_gray")
+                  p.right-date-text 16 июня
+              .our-projects__images.our-projects__left-image2
+                picture
+                  source(srcset="../img/our-projects-2-3.jpg" media="(max-width: 500px)")
+                  source(srcset="../img/our-projects-2-2.jpg" media="(max-width: 1280px)")
+                  img(src="../img/our-projects-2.jpg" alt="")
+                p.our-projects__image-text В своём стремлении улучшить опыт мы упускаем, что явные...
+                .image-date
+                  svg.date-svg.icon(width = "12px" height = "13px")
+                      use(xlink:href="../sprite.svg#mdi_calendar_gray")
+                  p.right-date-text 28 мая
+              .our-projects__images.our-projects__left-image3
+                picture
+                  source(srcset="../img/our-projects-3-4.jpg" media="(max-width: 500px)")
+                  source(srcset="../img/our-projects-3-3.jpg" media="(max-width: 768px)")
+                  source(srcset="../img/our-projects-3-2.jpg" media="(max-width: 1280px)")
+                  img(src="../img/our-projects-3.jpg" alt="")
+                p.our-projects__image-text Равным образом, высокое качество позиционных...
+                .image-date
+                  svg.date-svg.icon(width = "12px" height = "13px")
+                      use(xlink:href="../sprite.svg#mdi_calendar_gray")
+                  p.right-date-text 14 мая
+              .our-projects__images.our-projects__left-image4
+                .our-projects__left-date
+                  svg.date-svg.icon(width = "12px" height = "13px")
+                    use(xlink:href="../sprite.svg#mdi_calendar_today")
+                  p.left-date-text 20 марта
+                .our-projects__left-text
+                  h3.left-text-title Забвение
+                  p.left-text Играет важную роль в формировании глубокомысленных рассуждений
+                .our-projects__left-button
+                  button.left-button О проекте
+              .our-projects__images.our-projects__right-image1
+                .our-projects__right-date
+                  svg.date-svg.icon(width = "12px" height = "13px")
+                    use(xlink:href="../sprite.svg#mdi_calendar_today")
+                  p.right-date-text 9 апреля
+                .our-projects__right-text
+                  h3.right-text-title Cемантический разбор
+                  p.right-text В рамках спецификации современных стандартов, интерактивные прототипы
+                .our-projects__right-button
+                  button.right-button О проекте
+              .our-projects__images.our-projects__right-image2
+                picture
+                  source(srcset="../img/retouching3.jpg" media="(max-width: 500px)")
+                  source(srcset="../img/retouching2.jpg" media="(max-width: 1280px)")
+                  img(src="../img/retouching.jpg", alt="")
+                p.our-projects__image-text Как принято считать, многие известные личности и по сей день остаются уделом либералов...
+                .image-date
+                  svg.date-svg.icon(width = "12px" height = "13px")
+                      use(xlink:href="../sprite.svg#mdi_calendar_gray")
+                  p.right-date-text 9 марта
+              .our-projects__images.our-projects__right-image3
+                picture
+                  source(srcset="../img/portrait3.jpg" media="(max-width: 500px)")
+                  source(srcset="../img/portrait2.jpg" media="(max-width: 1280px)")
+                  img(src="../img/portrait.jpg", alt="")
+                p.our-projects__image-text С учётом сложившейся международной обстановки, новая модель организационной...
+                .image-date
+                  svg.date-svg.icon(width = "12px" height = "13px")
+                      use(xlink:href="../sprite.svg#mdi_calendar_gray")
+                  p.right-date-text 1 марта
+
+        section.contacts
+          .container
+            h2.contacts__title Контакты
+            .contacts__container
+              .map(id="map")
+                .contacts__info
+                  button.close-info
+                    svg.icon(width = "20px" height = "20px")
+                      use(xlink:href="../sprite.svg#close")
+                  h3.contacts__info-title Студия “Creative Studio”
+                  address.contacts__info-text 107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис № 82
+                  .number-info
+                    span
+                      svg.date-svg.icon(width = "20px" height = "20px")
+                          use(xlink:href="../sprite.svg#mdi_call")
+                    span
+                      a.contacts__info-text(href="tel:+749542423532") +7 (495) 42-423-532
+              .contacts__form
+                h3.contacts__form-title Оставить заявку
+                p.contacts__form-text Оставьте ваши данные, указав в графе “Комментарий” желаемые время и дату съемки или другого мероприятия
+                form.contacts__form(id="form")
+                  input.contacts__form-input.form.form__input.form-control(type="text" placeholder="Имя" name="name" id="name")
+                  input.contacts__form-input.form.form__input.form-control(type="email" placeholder="E-mail"  name="email" id="email")
+                  textarea.contacts__form-textarea.form(cols="30", rows="10" placeholder="Комментарий")
+                  button.contacts__form-button(id="submit-btn") Отправить
+
+      footer.footer
+        .container
+          .footer__container
+            .footer__logo
+              img.icon(src="img/logo2.png" width="191px" height="31px")
+            .footer__text
+              p.footer__text-content Которая из моих фотографий самая любимая? Та, которую я собираюсь снять завтра.
+            .footer__link
+              .footer__link-text
+                p.footer__link-text-content Больше интересного:
+              .footer__link-content
+                a(tabindex="0")
+                  svg.icon(width = "30px" height = "30px")
+                    use(xlink:href="../sprite.svg#social")
+                a(tabindex="0")
+                  svg.icon(width = "30px" height = "30px")
+                    use(xlink:href="../sprite.svg#fb")
+                a(tabindex="0")
+                  svg.icon(width = "30px" height = "30px")
+                    use(xlink:href="../sprite.svg#vk")
+
+      script
+        include  js/script.js

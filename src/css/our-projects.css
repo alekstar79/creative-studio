@@ -1,0 +1,433 @@
+@charset "UTF-8";
+.our-projects {
+  margin-bottom: 68px;
+}
+.our-projects .our-projects__title {
+  grid-area: title;
+  font-family: "TT Firs Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 12px;
+}
+.our-projects .our-projects__container {
+  max-width: 630px;
+  display: grid;
+  grid-gap: 30px;
+  grid-gap: 17px;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
+}
+.our-projects .our-projects__container .our-projects__images img, .our-projects .our-projects__container picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 0;
+  top: 0;
+  height: auto;
+  width: 100%;
+}
+.our-projects .our-projects__container .our-projects__image-text {
+  max-width: 342px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  transition: 0.2s;
+  margin-top: 12px;
+  margin-left: -1px;
+}
+.our-projects .our-projects__container .our-projects__image-text:hover {
+  color: #FF6E30;
+  transition: 0.2s;
+}
+.our-projects .our-projects__container .our-projects__image-text:focus {
+  background-color: #FFD4C1;
+  transition: 0.2s;
+}
+.our-projects .our-projects__container .our-projects__image-text:active {
+  color: #CE4307;
+  transition: 0.2s;
+}
+.our-projects .our-projects__container .image-date {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  margin-top: 10px;
+  margin-left: 1px;
+}
+.our-projects .our-projects__container .image-date .date-svg {
+  align-self: center;
+  margin-right: 5px;
+}
+.our-projects .our-projects__container .our-projects__left-image1 {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  order: 1;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 191px;
+  margin-right: 9px;
+}
+.our-projects .our-projects__container .our-projects__left-image1::before {
+  content: "#пейзаж";
+  position: absolute;
+  padding: 6px 14px;
+  margin-top: 7px;
+  margin-right: 7px;
+  background-color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-top: 8px;
+  right: 0px;
+}
+.our-projects .our-projects__container .our-projects__left-image2 {
+  grid-column: 2/2;
+  grid-row: 1/1;
+  order: 2;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 191px;
+}
+.our-projects .our-projects__container .our-projects__left-image2::before {
+  content: "#портрет";
+  position: absolute;
+  padding: 6px 14px;
+  margin-top: 7px;
+  margin-right: 7px;
+  background-color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-top: 8px;
+  margin-right: 8px;
+  right: 0px;
+}
+.our-projects .our-projects__container .our-projects__left-image3 {
+  grid-column: 3/3;
+  grid-row: 1/1;
+  order: 3;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 191px;
+}
+.our-projects .our-projects__container .our-projects__left-image3 .our-projects__image-text {
+  margin-top: 12px;
+  margin-left: -1px;
+}
+.our-projects .our-projects__container .our-projects__left-image3::before {
+  content: "#предмет";
+  position: absolute;
+  padding: 6px 14px;
+  margin-top: 7px;
+  margin-right: 7px;
+  background-color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-top: 8px;
+  margin-right: 8px;
+  right: 0px;
+}
+.our-projects .our-projects__container .our-projects__left-image4 {
+  grid-column: 1/4;
+  grid-row: 2;
+  order: 5;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  background-image: url("../img/oblivion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 290px;
+  padding-left: 29px;
+  display: flex;
+  flex-direction: column;
+  max-width: 630px;
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+.our-projects .our-projects__container .our-projects__left-image4 .our-projects__left-date {
+  display: flex;
+  margin-top: 22px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.our-projects .our-projects__container .our-projects__left-image4 .our-projects__left-date .date-svg {
+  align-self: center;
+}
+.our-projects .our-projects__container .our-projects__left-image4 .our-projects__left-date .left-date-text {
+  margin-left: 5px;
+}
+.our-projects .our-projects__container .our-projects__left-image4 .our-projects__left-text .left-text-title {
+  margin-top: 2px;
+  color: #FFFFFF;
+  font-family: "TT Firs Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+}
+.our-projects .our-projects__container .our-projects__left-image4 .our-projects__left-text .left-text {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 5px;
+  max-width: 292px;
+}
+.our-projects .our-projects__container .our-projects__left-image4 .our-projects__left-button {
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+.our-projects .our-projects__container .our-projects__left-image4 .our-projects__left-button .left-button {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  width: 121px;
+  height: 50px;
+  border: 3px solid #FF6E30;
+  background-color: rgba(0, 0, 0, 0);
+  align-self: flex-end;
+  transition: 0.2s;
+}
+.our-projects .our-projects__container .our-projects__left-image4 .our-projects__left-button .left-button:hover {
+  background-color: #FF6E30;
+  transition: 0.2s;
+}
+.our-projects .our-projects__container .our-projects__left-image4 .our-projects__left-button .left-button:focus {
+  background-color: #BC572B;
+  border: 3px solid #FF6E30;
+  transition: 0.2s;
+}
+.our-projects .our-projects__container .our-projects__left-image4 .our-projects__left-button .left-button:active {
+  background-color: #CE4307;
+  transition: 0.2s;
+}
+.our-projects .our-projects__container .our-projects__left-image4::before {
+  content: "#проектзабвение";
+  position: absolute;
+  padding: 6px 14px;
+  margin-top: 7px;
+  margin-right: 7px;
+  background-color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  right: 7px;
+  margin-top: 8px;
+  margin-right: 0px;
+}
+.our-projects .our-projects__container .our-projects__right-image1 {
+  position: relative;
+  grid-column: 4/6;
+  grid-row: 1/1;
+  order: 4;
+  margin-bottom: 7px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  background-image: url("../img/semantic-analysis.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 29px;
+  display: flex;
+  flex-direction: column;
+}
+.our-projects .our-projects__container .our-projects__right-image1 .our-projects__right-date {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  margin-top: 23px;
+  color: #FFFFFF;
+}
+.our-projects .our-projects__container .our-projects__right-image1 .our-projects__right-date .date-svg {
+  align-self: center;
+}
+.our-projects .our-projects__container .our-projects__right-image1 .our-projects__right-date .right-date-text {
+  margin-left: 5px;
+}
+.our-projects .our-projects__container .our-projects__right-image1 .our-projects__right-text .right-text-title {
+  margin-top: 2px;
+  color: #FFFFFF;
+  font-family: "TT Firs Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  max-width: 293px;
+  margin-left: -2px;
+}
+.our-projects .our-projects__container .our-projects__right-image1 .our-projects__right-text .right-text {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 5px;
+  max-width: 292px;
+}
+.our-projects .our-projects__container .our-projects__right-image1 .our-projects__right-button {
+  margin-top: auto;
+  margin-bottom: 29px;
+  margin-left: -1px;
+}
+.our-projects .our-projects__container .our-projects__right-image1 .our-projects__right-button .right-button {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  width: 121px;
+  height: 50px;
+  border: 3px solid #FF6E30;
+  background-color: rgba(0, 0, 0, 0);
+  align-self: flex-end;
+  transition: 0.2s;
+}
+.our-projects .our-projects__container .our-projects__right-image1 .our-projects__right-button .right-button:hover {
+  background-color: #FF6E30;
+  transition: 0.2s;
+}
+.our-projects .our-projects__container .our-projects__right-image1 .our-projects__right-button .right-button:focus {
+  background-color: #BC572B;
+  border: 3px solid #FF6E30;
+  transition: 0.2s;
+}
+.our-projects .our-projects__container .our-projects__right-image1 .our-projects__right-button .right-button:active {
+  background-color: #CE4307;
+  transition: 0.2s;
+}
+.our-projects .our-projects__container .our-projects__right-image1::before {
+  content: "#fuji";
+  position: absolute;
+  padding: 6px 14px;
+  margin-top: 7px;
+  margin-right: 7px;
+  background-color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  right: 0px;
+}
+.our-projects .our-projects__container .our-projects__right-image2 {
+  position: relative;
+  grid-column: 4/4;
+  grid-row: 2/2;
+  order: 5;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 299px;
+  margin-bottom: -3px;
+}
+.our-projects .our-projects__container .our-projects__right-image2 .our-projects__image-text {
+  margin-top: 13px;
+  margin-left: -1px;
+}
+.our-projects .our-projects__container .our-projects__right-image2::before {
+  content: "#ретушь";
+  position: absolute;
+  padding: 6px 14px;
+  margin-top: 7px;
+  margin-right: 7px;
+  background-color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  right: 0px;
+}
+.our-projects .our-projects__container .our-projects__right-image3 {
+  position: relative;
+  grid-column: 5/5;
+  grid-row: 2/2;
+  order: 7;
+  margin-top: 6px;
+  margin-left: 4px;
+  max-width: 303px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+.our-projects .our-projects__container .our-projects__right-image3 .our-projects__image-text {
+  margin-top: 11px;
+  margin-left: 1px;
+}
+.our-projects .our-projects__container .our-projects__right-image3::before {
+  content: "#портрет";
+  position: absolute;
+  padding: 6px 14px;
+  margin-top: 7px;
+  margin-right: 7px;
+  background-color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-top: 7px;
+  margin-right: 9px;
+  right: 0px;
+}/*# sourceMappingURL=our-projects.css.map */

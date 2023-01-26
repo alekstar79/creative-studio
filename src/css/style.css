@@ -1,0 +1,16 @@
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+[class*=ground-pane] {
+  filter: grayscale(1);
+}/*# sourceMappingURL=style.css.map */

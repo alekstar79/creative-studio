@@ -1,0 +1,75 @@
+.header {
+  background-color: #202020;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+}
+.header .header__container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.header .header__container .header__logo {
+  margin-right: 98px;
+}
+.header .header__container .header__navigate {
+  width: 100%;
+}
+.header .header__container .header__navigate .nav-list {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .header__container .header__navigate .nav-list .nav-link {
+  color: #FFFFFF;
+  font-family: "TT Firs Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  transition: 0.2s;
+}
+.header .header__container .header__navigate .nav-list .nav-link:active {
+  color: #CE4307;
+  transition: 0.2s;
+}
+.header .header__container .header__navigate .nav-list .nav-link:focus {
+  background-color: #BC572B;
+  transition: 0.2s;
+}
+.header .header__container .header__navigate .nav-list .nav-link:hover {
+  color: #FF6E30;
+  transition: 0.2s;
+}
+.header .header__container .header__social-link {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  flex: 1 0 auto;
+  margin-left: 48px;
+  margin-top: 5px;
+}
+.header .header__container .header__social-link .icon {
+  fill: #CACACA;
+  transition: 0.2s;
+}
+.header .header__container .header__social-link .icon:hover {
+  fill: #FF6E30;
+  transition: 0.2s;
+}
+.header .header__container .header__social-link a:focus > .icon {
+  fill: #BC572B;
+  transition: 0.2s;
+}
+.header .header__container .header__social-link a:active > .icon {
+  fill: #CE4307;
+  transition: 0.2s;
+}
+.header .header__container .header__search {
+  display: none;
+}
+
+.header_min {
+  display: none;
+}

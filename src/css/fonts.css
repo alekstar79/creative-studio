@@ -1,0 +1,27 @@
+/* Regular */
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "TT Firs Neue";
+  font-display: swap;
+
+  src:
+    local("TT Firs Neue"),
+    url("../fonts/TTFirsNeue-Regular.woff2") format("woff2"),
+    url("../fonts/TTFirsNeue-Regular.woff") format("woff");
+}
+
+/* Bold */
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "TT Firs Neue";
+  font-display: swap;
+
+  src:
+    local("TT Firs Neue"),
+    url("../fonts/TTFirsNeue-Bold.woff2") format("woff2"),
+    url("../fonts/TTFirsNeue-Bold.woff") format("woff");
+}

@@ -1,0 +1,35 @@
+{
+  "name": "creative-studio",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-image": "^6.3.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-uglify-es": "^3.0.0"
+  },
+  "dependencies": {
+    "gulp-pug": "^5.0.0",
+    "just-validate": "^3.4.0"
+  }
+}

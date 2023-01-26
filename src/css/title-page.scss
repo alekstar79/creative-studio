@@ -1,0 +1,125 @@
+@import './variables';
+@import './mixin';
+
+.title-page {
+  margin-top: 33px;
+  margin-bottom: 63px;
+  .title-page__container {
+    position: relative;
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "left right";
+    grid-template-columns: 1fr 1fr;
+    .title-page__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 630px;
+      margin-top: 5px;
+      margin-bottom: 3px;
+      background-image: url("../img/master-class.jpg");
+      background-size: cover;
+      grid-area: left;
+      background-repeat: no-repeat;
+      .title-page__left-teg {
+        position: relative;
+        width: 120px;
+        height: 30px;
+        margin-top: 18px;
+        margin-left: auto;
+        margin-right: 18px;
+        padding: 7px 15px;
+        background-color: $tegColor;
+        .title-page__left-teg-text {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          color: $textColorLight;
+        }
+      }
+      .title-page__left-content {
+        margin-bottom: 64px;
+        margin-left: 59px;
+        .title-page__left-pretitle {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          color: $textColorLight;
+          margin-bottom: 3px;
+        }
+        .title-page__left-title {
+          max-width: 427px;
+          margin-bottom: 18px;
+          margin-left: -1px;
+          font-family: "TT Firs Neue", serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 104%;
+          color: $textColorLight;
+        }
+        .title-page__left-button {
+          width: 159px;
+          height: 50px;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 19px;
+          background-color: $buttonColor;
+          color: $textColorLight;
+          border: 0;
+          transition: .2s;
+        }
+        .title-page__left-button:hover {
+          background-color: #BC572B;
+          transition: .2s;
+        }
+        .title-page__left-button:focus {
+          background-color: #FF6E30;
+          border: 3px solid #CE4307;
+          transition: .2s;
+        }
+        .title-page__left-button:active {
+          background-color: #CE4307;
+          transition: .2s;
+        }
+      }
+    }
+    .title-page__right {
+      grid-area: right;
+      .title-page__right-title {
+        max-width: 630px;
+        margin-bottom: 19px;
+        font-family: "TT Firs Neue", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 104%;
+        color: $textColorDark;
+      }
+      .title-page__right-images {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-areas:"image1 image1"
+                            "image2 image3";
+        .title-page__right-image1 {
+          grid-area: image1;
+          margin-top: 5px;
+        }
+        .title-page__right-image2 {
+          grid-area: image2;
+          margin-top: -1px;
+        }
+        .title-page__right-image3 {
+          grid-area: image3;
+          margin-top: -1px;
+        }
+      }
+    }
+  }
+}

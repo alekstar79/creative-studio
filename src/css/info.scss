@@ -1,0 +1,103 @@
+@import '_variables';
+@import '_mixin';
+
+.info {
+  background-color: $bgColorDark;
+  .info__container {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "text form";
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 68px;
+    padding-top: 30px;
+    padding-bottom: 69px;
+    color: $textColorSoft;
+    .info__left {
+      max-width: 630px;
+      grid-area: text;
+      .info__left-title {
+        margin-bottom: 3px;
+        font-family: "TT Firs Neue", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+        color: $textColorLight;
+      }
+      .info__left-text {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        color: $textColorSoft;
+      }
+    }
+    .info__right {
+      max-width: 630px;
+      margin-top: 33px;
+      grid-area: form;
+      .info__right-text {
+        margin-top: 20px;
+        margin-bottom: 16px;
+        font-family: "TT Firs Neue", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 22px;
+        color: $textColorLight
+      }
+      .info__right-form {
+        display: flex;
+        flex-wrap: nowrap;
+        .info__right-input {
+          width: 100%;
+          padding: 15px 23px;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          background-color: #4A4A4A;
+          border: 0;
+          color: $textColorLight;
+          transition: .2s;
+        }
+        .info__right-input::placeholder {
+          color: $textColorSoft;
+          transition: .2s;
+        }
+        .info__right-input:focus {
+          border: 1px solid #FF6E30;
+          transition: .2s;
+        }
+        .info__right-input:hover::placeholder {
+          color: #FF6E30;
+          transition: .2s;
+        }
+        .info__right-input:focus::placeholder {
+          color: $textColorSoft;
+          transition: .2s;
+        }
+        .info__right-button {
+          @include button;
+          margin-left: 30px;
+          transition: .2s;
+        }
+        .info__right-button:hover {
+          background-color: #BC572B;
+          transition: .2s;
+        }
+        .info__right-button:focus {
+          background-color: #FF6E30;
+          border: 3px solid #CE4307;
+          transition: .2s;
+        }
+        .info__right-button:active {
+          background-color: #CE4307;
+          transition: .2s;
+        }
+      }
+    }
+  }
+}

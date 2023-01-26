@@ -1,0 +1,318 @@
+@import '_variables';
+@import '_mixin';
+
+.our-projects {
+  margin-bottom: 68px;
+  .our-projects__title {
+    grid-area: title;
+    margin-bottom: 12px;
+    font-family: "TT Firs Neue", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .our-projects__container {
+    @include grid();
+    grid-gap: 17px;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    .our-projects__images img, picture {
+      object-fit: cover;
+      height: auto;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+    .our-projects__image-text {
+      display: -webkit-box;
+      max-width: 342px;
+      margin-top: 12px;
+      margin-left: -1px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      transition: .2s;
+    }
+    .our-projects__image-text:hover {
+      color: $buttonColor;
+      transition: .2s;
+    }
+    .our-projects__image-text:focus {
+      background-color: #FFD4C1;
+      transition: .2s;
+    }
+    .our-projects__image-text:active {
+      color: #CE4307;
+      transition: .2s;
+    }
+    .image-date {
+      display: flex;
+      margin-top: 10px;
+      margin-left: 1px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 22px;
+      .date-svg {
+        align-self: center;
+        margin-right: 5px;
+      }
+    }
+    .our-projects__left-image1 {
+      grid-column: 1/1;
+      grid-row: 1/1;
+      order: 1;
+      position: relative;
+      @include ourProjectsText();
+      max-width: 191px;
+      margin-right: 9px;
+    }
+    .our-projects__left-image1::before {
+      content: "#пейзаж";
+      @include teg;
+      margin-top: 8px;
+      right: 0;
+    }
+    .our-projects__left-image2 {
+      grid-column: 2/2;
+      grid-row: 1/1;
+      order: 2;
+      position: relative;
+      @include ourProjectsText();
+      max-width: 191px;
+    }
+    .our-projects__left-image2::before {
+      content: "#портрет";
+      @include teg;
+      margin-top: 8px;
+      margin-right: 8px;
+      right: 0;
+    }
+    .our-projects__left-image3 {
+      grid-column: 3/3;
+      grid-row: 1/1;
+      order: 3;
+      position: relative;
+      @include ourProjectsText();
+      max-width: 191px;
+      .our-projects__image-text  {
+        margin-top: 12px;
+        margin-left: -1px;
+      }
+    }
+    .our-projects__left-image3::before {
+      content: "#предмет";
+      @include teg;
+      margin-top: 8px;
+      margin-right: 8px;
+      right: 0;
+    }
+    .our-projects__left-image4 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      max-width: 630px;
+      min-height: 290px;
+      margin-bottom: 3px;
+      margin-top: 5px;
+      padding-left: 29px;
+      grid-column: 1/4;
+      grid-row: 2;
+      order: 5;
+      @include ourProjectsText();
+      background-image: url("../img/oblivion.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      .our-projects__left-date {
+        display: flex;
+        margin-top: 22px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 22px;
+        color: $textColorLight;
+        .date-svg {
+          align-self: center;
+        }
+        .left-date-text {
+          margin-left: 5px;
+        }
+      }
+      .our-projects__left-text {
+        .left-text-title {
+          margin-top: 2px;
+          color: $textColorLight;
+          font-family: "TT Firs Neue", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 24px;
+        }
+        .left-text {
+          color: $textColorLight;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+          margin-top: 5px;
+          max-width: 292px;
+        }
+      }
+      .our-projects__left-button {
+        margin-top: auto;
+        margin-bottom: 30px;
+        .left-button {
+          @include buttonLite();
+          transition: .2s;
+        }
+        .left-button:hover {
+          background-color: #FF6E30;
+          transition: .2s;
+        }
+        .left-button:focus {
+          background-color: #BC572B;
+          border: 3px solid #FF6E30;
+          transition: .2s;
+        }
+        .left-button:active {
+          background-color: #CE4307;
+          transition: .2s;
+        }
+      }
+    }
+    .our-projects__left-image4::before {
+      content: "#проектзабвение";
+      @include teg();
+      right: 7px;
+      margin-top: 8px;
+      margin-right: 0;
+    }
+    .our-projects__right-image1 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      grid-column: 4/6;
+      grid-row: 1/1;
+      order: 4;
+      margin-bottom: 7px;
+      padding-left: 29px;
+      @include ourProjectsText();
+      background-image: url("../img/semantic-analysis.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      .our-projects__right-date {
+        display: flex;
+        margin-top: 23px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 22px;
+        color: $textColorLight;
+        .date-svg {
+          align-self: center;
+        }
+        .right-date-text {
+          margin-left: 5px;
+        }
+      }
+      .our-projects__right-text {
+        .right-text-title {
+          max-width: 293px;
+          margin-top: 2px;
+          margin-left: -2px;
+          color: $textColorLight;
+          font-family: "TT Firs Neue", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 24px;
+        }
+        .right-text {
+          max-width: 292px;
+          margin-top: 5px;
+          color: $textColorLight;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+      .our-projects__right-button {
+        margin-top: auto;
+        margin-bottom: 29px;
+        margin-left: -1px;
+        .right-button {
+          @include buttonLite();
+          transition: .2s;
+        }
+        .right-button:hover {
+          background-color: #FF6E30;
+          transition: .2s;
+        }
+        .right-button:focus {
+          background-color: #BC572B;
+          border: 3px solid #FF6E30;
+          transition: .2s;
+        }
+        .right-button:active {
+          background-color: #CE4307;
+          transition: .2s;
+        }
+      }
+    }
+    .our-projects__right-image1::before{
+      content: "#fuji";
+      @include teg;
+      right: 0;
+    }
+    .our-projects__right-image2 {
+      position: relative;
+      grid-column: 4/4;
+      grid-row: 2/2;
+      order: 5;
+      margin-top: 6px;
+      margin-bottom: 2px;
+      @include ourProjectsText();
+      max-width: 299px;
+      margin-bottom: -3px;
+      .our-projects__image-text {
+        margin-top: 13px;
+        margin-left: -1px;
+      }
+    }
+    .our-projects__right-image2::before{
+      content: "#ретушь";
+      @include teg;
+      right: 0;
+    }
+    .our-projects__right-image3 {
+      position: relative;
+      grid-column: 5/5;
+      grid-row: 2/2;
+      order: 7;
+      margin-top: 6px;
+      margin-left: 4px;
+      max-width: 303px;
+      @include ourProjectsText();
+      .our-projects__image-text {
+        margin-top: 11px;
+        margin-left: 1px;
+      }
+    }
+    .our-projects__right-image3::before{
+      content: "#портрет";
+      @include teg;
+      margin-top: 7px;
+      margin-right: 9px;
+      right: 0;
+    }
+  }
+}

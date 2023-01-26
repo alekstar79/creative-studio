@@ -1,0 +1,78 @@
+.footer {
+  background-color: #202020;
+  height: 106px;
+  width: 100%;
+  padding-top: 24px;
+}
+.footer .footer__container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "logo text text link";
+}
+.footer .footer__container .footer__logo {
+  grid-area: logo;
+  align-self: center;
+}
+.footer .footer__container .footer__logo .footer__logo-text {
+  font-family: "TT Firs Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #CACACA;
+}
+.footer .footer__container .footer__text {
+  grid-area: text;
+  margin-left: 106px;
+}
+.footer .footer__container .footer__text .footer__text-content {
+  max-width: 361px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #CACACA;
+}
+.footer .footer__container .footer__text .footer__text-content .footer__light-text {
+  color: #7e7e7e;
+}
+.footer .footer__container .footer__link {
+  grid-area: link;
+  align-self: center;
+  margin-left: auto;
+}
+.footer .footer__container .footer__link .footer__link-text-content {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #CACACA;
+  margin-left: 98px;
+  max-width: 364px;
+}
+.footer .footer__container .footer__link .footer__link-content {
+  width: 131px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-top: 8px;
+  margin-right: 14px;
+}
+.footer .footer__container .footer__link .footer__link-content .icon {
+  fill: #CACACA;
+  transition: 0.2s;
+}
+.footer .footer__container .footer__link .footer__link-content .icon:hover {
+  fill: #FF6E30;
+  transition: 0.2s;
+}
+.footer .footer__container .footer__link .footer__link-content a:focus > .icon {
+  fill: #BC572B;
+  transition: 0.2s;
+}
+.footer .footer__container .footer__link .footer__link-content a:active > .icon {
+  fill: #CE4307;
+  transition: 0.2s;
+}
